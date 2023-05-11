@@ -111,3 +111,31 @@ public class Bj24 {
 	}
 }
 ```
+11021번 A+B-7
+```java
+package bj_for;
+
+import java.util.Scanner;
+
+//bj 11022번
+public class Bj25 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int t = sc.nextInt();
+		int[] a = new int[t];
+		int[] b = new int[t];
+		int array[] = new int[t];
+
+		for (int i = 0; i < t; i++) {
+			a[i] = sc.nextInt();
+			b[i] = sc.nextInt();
+			array[i] = a[i]+b[i];
+		}
+		for(int i = 0; i < t; i++) {			
+			System.out.println("Case #"+(i+1)+": "+a[i]+" + "+b[i]+" = "+array[i]);
+		}
+		sc.close();
+	}
+}
+```
